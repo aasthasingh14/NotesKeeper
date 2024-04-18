@@ -114,18 +114,8 @@ function Read() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Link to="/create">
-        <Button
-          variant="contained"
-          color="white"
-          className={classes.button}
-          startIcon={<AddIcon />}
-          style={{ fontSize: "25px" }}
-        >
-          CREATE NOTE
-        </Button>
-      </Link>
-      <TableContainer component={Paper}>
+       
+      <TableContainer component={Paper} style={{marginTop:'50px'}}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow className={classes.row}>
@@ -152,7 +142,7 @@ function Read() {
                 style={{ fontSize: "20px" }}
               >
                 TO DO
-              </TableCell> 
+              </TableCell>
               <TableCell
                 className={classes.heading}
                 style={{ fontSize: "20px" }}
@@ -195,7 +185,7 @@ function Read() {
                   style={{ fontSize: "18px" }}
                 >
                   {row.todo}
-                </TableCell> 
+                </TableCell>
                 <TableCell
                   className={classes.tabContent}
                   style={{ fontSize: "18px" }}
@@ -217,6 +207,17 @@ function Read() {
           </TableBody>
         </Table>
       </TableContainer>
+      <Link to="/create">
+        <Button
+          variant="contained"
+          color="white"
+          className={classes.button}
+          startIcon={<AddIcon />}
+          style={{ fontSize: "25px" }}
+        >
+          CREATE NOTE
+        </Button>
+      </Link>
       {open && (
         <Dialog
           fullScreen={fullScreen}

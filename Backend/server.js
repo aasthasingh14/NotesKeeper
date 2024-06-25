@@ -39,6 +39,7 @@ app.use("/api", notesRoutes);
 
 app.get("/", (req, res) => {
   res.send("App is working...");
+  res.json("Hello");
 });
 
 // PORT

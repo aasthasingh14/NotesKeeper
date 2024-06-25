@@ -28,7 +28,7 @@ const notesRoutes = require("./routes/notes");
 app.use(bodyParser.json());
 app.use(cors(
   {
-    origin:["https://notes-keeper-backend-seven.vercel.app"],
+    origin:["https://notes-keeper-frontend-indol.vercel.app"],
     methods:["POST","GET"],
     credentials: true
   }

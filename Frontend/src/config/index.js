@@ -1,1 +1,1 @@
-export const api_url = "http://localhost:5000";
+export const api_url = "notes-keeper-backend-seven.vercel.app";

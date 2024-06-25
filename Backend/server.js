@@ -26,7 +26,13 @@ const notesRoutes = require("./routes/notes");
 
 // Middlewares
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://deploy.app"],
+    methods:["POST","GET"],
+    credentials: true
+  }
+));
 
 // Routes
 app.use("/api", notesRoutes);
